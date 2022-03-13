@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "bragauche"
+version = "0.1.0"
+description = ""
+authors = ["Cilyan Olowen <gaknar@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pygame = "^2.1.2"
+pyserial = "^3.5"
+click = "^8.0.4"
+
+[tool.poetry.dev-dependencies]
+ipykernel = "^6.9.1"
+flake8 = "^4.0.1"
+pycodestyle = "^2.8.0"
+bandit = "^1.7.2"
+black = "^22.1.0"
+
+[tool.poetry.scripts]
+bragauche = 'bragauche.cli:bragauche'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 79
